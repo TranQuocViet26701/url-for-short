@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}URL For Short{% endblock %}
+
+{#{% block navbar %}#}
+{#<div class="navbar navbar-fixed-top">#}
+{#  <!-- ... -->#}
+{#</div>#}
+{#{% endblock %}#}
+
+{% block content %}
+  <div class="container">
+  <h1 class="text-center">URL For Short</h1>
+    {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+  {% if shorten_url %}
+      <p style="margin-top: 10px">Shorten Url: {{ shorten_url }}</p>
+  {% endif %}
+  </div>
+{% endblock %}
