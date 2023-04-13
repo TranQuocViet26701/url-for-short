@@ -32,7 +32,7 @@ To use **Url For Short**, follow these step:
 
 1. Enter a long URL into a input field on the homepage.
 2. Click the "Shorten" button.
-3. The shortened URL will be displayed on the screen.
-4. Copy the shortened URL.
-5. Paste the shortened URL wherever you want to use it.
+3. The shortened URL and the QR Code will be displayed on the screen.
+4. Copy the shortened URL or Scan QR Code/Download QR Code image.
+5. Paste the shortened URL or Scan QR Code wherever you want to use it.
 

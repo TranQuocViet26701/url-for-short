@@ -13,8 +13,10 @@
   <div class="container">
   <h1 class="text-center">URL For Short</h1>
     {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
-  {% if shorten_url %}
-      <p style="margin-top: 10px">Shorten Url: {{ shorten_url }}</p>
+  {% if shorten_url and qrcode %}
+      <p style="margin-top: 10px"><strong>Shorten Url:</strong> {{ shorten_url }}</p>
+      <img src="{{ qrcode }}" />
+      <a href="{{ qrcode }}" download><button class="btn btn-primary">Download</button></a>
   {% endif %}
   </div>
 {% endblock %}
